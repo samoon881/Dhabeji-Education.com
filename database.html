@@ -1,0 +1,65 @@
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    Username VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY AUTO_INCREMENT,
+    CourseName VARCHAR(100) NOT NULL,
+    Description TEXT,
+    CreatedDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+CREATE TABLE Articles (
+    ArticleID INT PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(255) NOT NULL,
+    Content TEXT,
+    Author VARCHAR(100),
+    PublishDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+CREATE TABLE ContactMessages (
+    MessageID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Message TEXT NOT NULL,
+    SentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-- Users Table
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    Username VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Courses Table
+CREATE TABLE Courses (
+    CourseID INT PRIMARY KEY AUTO_INCREMENT,
+    CourseName VARCHAR(100) NOT NULL,
+    Description TEXT,
+    CreatedDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Articles Table
+CREATE TABLE Articles (
+    ArticleID INT PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(255) NOT NULL,
+    Content TEXT,
+    Author VARCHAR(100),
+    PublishDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Contact Messages Table
+CREATE TABLE ContactMessages (
+    MessageID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Message TEXT NOT NULL,
+    SentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

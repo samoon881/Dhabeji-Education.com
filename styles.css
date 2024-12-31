@@ -1,0 +1,227 @@
+/* Add styles here */
+
+
+Script.js
+
+// Add JavaScript code here
+
+
+Courses.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="community.html">Community</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="course-list">
+			<h2>Courses</h2>
+			<ul>
+				<li>
+					<h3>Course Title</h3>
+					<p>Course Description</p>
+					<button class="learn-more-btn">Learn More</button>
+				</li>
+			</ul>
+		</section>
+		.course-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.course-card {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: calc(33.33% - 20px);
+}
+
+.course-card h3 {
+	margin-top: 0;
+}
+
+.learn-more-btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.learn-more-btn:hover {
+	background-color: #555;
+}
+.community-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.join-btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.community-members {
+	margin-top: 20px;
+}
+
+.community-members ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.community-members li {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: calc(33.33% - 20px);
+}
+
+.community-members img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.community-members h4 {
+	margin-top: 0;
+}
+
+.community-members p {
+	font-size: 0.8em;
+	color: #666;
+}
+
+.news-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.news-article {
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-article h3 {
+	margin-top: 0;
+}
+
+.news-article time {
+	font-size: 0.8em;
+	color: #666;
+}
+.course-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.course-card {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: calc(33.33% - 20px);
+}
+
+.course-card h3 {
+	margin-top: 0;
+}
+
+.learn-more-btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.learn-more-btn:hover {
+	background-color: #555;
+}
+
+.news-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.news-article {
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-article h3 {
+	margin-top: 0;
+}
+
+.news-article time {
+	font-size: 0.8em;
+	color: #666;
+}
+
+	</main>
+	
+	footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	clear: both;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+	<script src="script.js"></script>
+</body>
+</html>
